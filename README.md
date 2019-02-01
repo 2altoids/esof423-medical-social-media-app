@@ -1,2 +1,8 @@
-# esof423-medical-social-media-app
-Project for ESOF 423 class
+<center> <h1>Medical Social Media Network</h1> </center>
+
+
+This application is a under development social media network designed to work between patients and verified clinicians to provide easy sharing of information between patients and clinicians.
+
+To see User Documentation click: [here](userDoc.md)
+
+To see Developer Documentation click: [here](devDoc.md)
