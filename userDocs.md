@@ -23,5 +23,5 @@ This section will be updated as more functionality is added to the project
 
 <h3>Reporting a bug</h3>
 
-TODO: add bug report stuff here
-
+If you wish to report a bug please write a report following the mozilla bug report guidelines [here](https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines)
+and email this report to a.smith@troutmoon.com.   This reporting method is subject to change and bug reporting methods will most likely change in the future.
