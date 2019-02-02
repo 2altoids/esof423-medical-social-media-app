@@ -39,7 +39,7 @@ To be expanded once functionality is added.
 
 <h3>Testing</h3>
 
-To be expanded as functionality is added.
+Testing is accomplished using Travis CI, which automates builds and tests.  Travis CI documentation can be found here:  [https://docs.travis-ci.com/](https://docs.travis-ci.com/).  The behavior of Travis CI is defined in the `.travis.yml` specification file in the main directory.
 
 
 <h3>Creating a new Release</h3>
