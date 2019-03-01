@@ -1,10 +1,9 @@
 <?php
 
 //email and password (display name is set on register)
-$Pass = $_POST['pass'];
-$Email = $_POST['email'];
 
 
+class login{
 //method to connect to DB
 function connectDB()
 {
@@ -25,8 +24,7 @@ function login ($Pass, $Email)
     //global $Pass, $Email;
     
     //get our database connection
-    $conn = connectDB();
-    
+    $conn = $this->connectDB();
     echo "Pre query";
     //create query
     $sql = "SELECT pass FROM LoginTable WHERE email='$Email'";
@@ -67,6 +65,11 @@ function login ($Pass, $Email)
 }
 
 //call login
-login($Pass, $Email);
+}
+$Pass = $_POST['pass'];
+$Email = $_POST['email'];
+$LoginClass = new login();
+$LoginClass->login($Pass, $Email);
+
 
 ?>
