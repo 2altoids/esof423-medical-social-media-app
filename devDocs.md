@@ -31,21 +31,60 @@ Please be aware that development branch may contain unknown bugs or other unknow
 
 <h3>Directory Layout</h3>
 
-To be expanded once directory layout is finalized.
+The directory layout is as follows for the current release:
+
+├── css
+
+│   ├── dcotor.css
+
+│   └── global.css
+
+├── html
+
+│   └── clinician.html
+
+├── images
+
+├── php
+
+│   ├── login.php
+
+│   └── register.php
+
+├── devDocs.md
+
+├── userDocs.md
+
+├── index.html
+
+├── .travis.yml
+
+└── README.md
+
+With the "css" directory containing css files, the "php" directory containing php scripts, the "html" directory containing any needed html files and finally the "images" directory containing any referenced images.
+
 
 <h3>Setup</h3>
 
-To be expanded once functionality is added.
+To setup for development clone the latest stable development code to your local machine.
+
+If PHP is not installed on your machine install the latest version of PHP as well as an editor to properly edit php files.
+
+Next you will need configure the .php scripts in the php folder to correctly connect to your local or remote databases.
+
+Once the databases have been configured you should be ready to begin development.
 
 <h3>Testing</h3>
 
 Testing is accomplished using Travis CI, which automates builds and tests.  Travis CI documentation can be found here:  [https://docs.travis-ci.com/](https://docs.travis-ci.com/).  The behavior of Travis CI is defined in the `.travis.yml` specification file in the main directory.
 
+Unit testing specifications are currently under development.
+
 
 <h3>Creating a new Release</h3>
 
-To be expanded once release requirements are finalized.
+We are currently developing the guidelines for contributor based releases
 
-Outstanding and Resolved issues
+<h3>Outstanding and Resolved issues</h3>
 
-There are no outstanding or resolved issues as of 2/2/2019
+There are no outstanding or resolved issues as of 3/1/2019
