@@ -8,20 +8,38 @@ Welcome to the user documentation for the Medical Social Network Project (M.S.N.
 
 <h3>Obtaining and Installing</h3>
 
-As the M.S.N.P is a web-based application to access it you just need to go to the home page at [INSERT ACTUAL LINK HERE](www.google.com)
-
-<h3>Running the program</h3>
-
-Temporary Addition, may be removed.
-
+As the M.S.N.P is a web-based application to access it you just need to go to the home page at [http://esofmsn.a2hosted.com/](http://esofmsn.a2hosted.com/)
 
 <h3>Using the website</h3>
 
-The current release does not contain any functionality and only represents a Non feature release of the project.  
+<h4>Registering an Account</h4>
+To register a new account first go to the main page at [http://esofmsn.a2hosted.com/](http://esofmsn.a2hosted.com/).
 
-This section will be updated as more functionality is added to the project
+Next click the green "register" button under the "login" button and "remember me" check box.
+
+On the next form enter your new accounts information.  The required information is an Email Account, User name, and Password.  The Clinician ID field should only be filled out if you are a clinician.*  
+
+Once you have entered your account information click the "register" button.
+After you account has been created you will be directed to the main page and can now log in with your new account.
+
+*For the current Beta release the clinician field is not used.
+
+
+<h4>Logging In</h4>
+ 
+To log in with a existing account first go to the main page at [http://esofmsn.a2hosted.com/](http://esofmsn.a2hosted.com/).
+
+After reaching the main page enter your email and password into the email and password fields and click the green "Login" button.
+
+Once you have logged in you will be taken to the home page.
 
 <h3>Reporting a bug</h3>
 
-If you wish to report a bug please write a report following the mozilla bug report guidelines [here](https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines)
-and email this report to a.smith@troutmoon.com.   This reporting method is subject to change and bug reporting methods will most likely change in the future.
+If you wish to report a bug please first read the following mozilla bug report guidelines [here](https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines)
+
+To enter the report on Backlog follow the link sent to your account's email address when you created the account.**  After creating an Backlog account click the "+" located on the right side of the top bar on your screen and select "Media Social Network (MSN)".  After you have selected MSN fill out a report detailing the issue and click "add".
+
+**Email list mailing functionality is WIP for the beta.
+
+
+
