@@ -1,20 +1,37 @@
+.header {
+	background-color: #6dd4c0;
+	padding: 5px;
+	text-align: left;
+	
+}
+
 body{
 	width: 100%;
-	padding: 12px 20px; 
-	margin: 8px 0; 
+	padding: 0; 
+	margin: 0; 
 	display: inline-block; 
 	border: 1px solid #ccc;
 	box-sizing: border-box; 
-	background: linear-gradient(white, DarkTurquoise); 
+	background: white; 
 	font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.content{
+	max-width: 500px; 
+	margin: auto; 
+	padding-top: 70px; 
+}
+
 /* Bordered form */
 form {
   border: 3px solid #f1f1f1;
+  background: linear-gradient(white, #1abc9c);
 }
 
+
 /* Full-width inputs */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=clinicianid]{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -23,16 +40,7 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
+
 
 /* Add a hover effect for buttons */
 button:hover {
@@ -43,13 +51,19 @@ button:hover {
 .cancelbtn {
   width: auto;
   padding: 10px 18px;
-  background-color: #f44336;
+  background-color: #333;
+}
+
+.registerbtn, .signupbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #333;
 }
 
 /* Center the avatar image inside this container */
 .imgcontainer {
   text-align: center;
-  margin: 24px 0 12px 0;
+  margin: 30px 0 0px 0;
 }
 
 /* Avatar image */
@@ -58,10 +72,7 @@ img.avatar {
   border-radius: 50%;
 }
 
-/* Add padding to containers */
-.container {
-  padding: 16px;
-}
+
 
 /* The "Forgot password" text */
 span.psw {
@@ -77,6 +88,109 @@ span.psw {
   }
   .cancelbtn {
     width: 100%;
+  }
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus, input[type=clinicianid]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #333;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
   }
 }
 #footer{
