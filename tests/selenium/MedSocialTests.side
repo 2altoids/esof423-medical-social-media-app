@@ -1,0 +1,141 @@
+{
+  "id": "7dd3a00c-ad7c-4657-a35f-ee10ac3f7a3e",
+  "version": "2.0",
+  "name": "MedSocialTests",
+  "url": "http://esofmsn.a2hosted.com",
+  "tests": [{
+    "id": "064973b9-f985-48ba-a60a-9b0c2c9b32c3",
+    "name": "loginTest",
+    "commands": [{
+      "id": "5cab89cc-066a-4790-8a40-7053ea7a043b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42420921-e185-4b59-9472-72b401950fcb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eedb1ade-e01c-4610-a64e-3d47ada8e3bb",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c5cdf3c-2c5c-4677-af18-9e6c6bcbcc5f",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "example1@gmail.com"
+    }, {
+      "id": "4a94cbdf-71e8-467c-a429-9a024a8a4ef5",
+      "comment": "",
+      "command": "type",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "5b758bea-31b4-4367-8b38-193d6b3ae9d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(5)",
+      "targets": [
+        ["css=button:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1292a2e-6039-44fd-ad3c-a7d78b6a406e",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c221fd7e-d21e-4fe8-9ec0-45985a31a4a7",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "example@gmail.com"
+    }, {
+      "id": "aeddddae-b287-4c24-9b30-6fbb3cf91552",
+      "comment": "",
+      "command": "type",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "f3d620e7-8307-4964-ab49-cb6d9d2a3a8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(5)",
+      "targets": [
+        ["css=button:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dc22bac-2ad5-4ad6-a26c-b3dbc3ef889e",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(5)",
+      "targets": [
+        ["css=p:nth-child(5)", "css:finder"],
+        ["xpath=//p[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "455b1426-ba11-43de-8d58-0ff87446f686",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["064973b9-f985-48ba-a60a-9b0c2c9b32c3"]
+  }],
+  "urls": ["http://esofmsn.a2hosted.com/"],
+  "plugins": []
+}
