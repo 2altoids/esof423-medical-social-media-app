@@ -56,7 +56,51 @@
 
 
 <?php //add user to friends here
-require_once("friend.php");
+
+Class friends{
+    
+    function addFriend($email, $friend_email, $friend_displayName) //add a friend to an account with the given name
+    {
+         $conn = connectDB("localhost","esofmsna_User","Lemming17","esofmsna_FriendsDatabase");
+    //create query
+    $sql = "SELECT friend_email FROM $Email";
+    $result = mysqli_query($conn, $sql);
+
+    if(mysqli_num_rows($result)>0) {
+        echo 'You already have this user added as a friend';
+        //already had a friend
+    }
+    else //no entry was found
+    {
+    
+    $sql2 = "INSERT INTO $Email ($friend_email, $friend_displayName) VALUES ('$Fmail', '$Fname')";
+    //get result
+     if ($conn->query($sql2) === TRUE) {
+        echo "Friend added";
+         return true;
+     }
+     else
+     {
+     echo "Error: " . $sql . '<br>' . $conn->error;
+     return false;
+     }
+        
+    
+    
+    
+    function connectDB()
+    {
+    //Connect to the database (using hard coded values as the database wont change")
+    $conn = mysqli_connect("localhost", "esofmsna_User", "Lemming17", "esofmsna_LoginDatabase");
+    //mysql_select_db($dbname, $connection);
+    if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+    
+    } 
+    return $conn;
+    }
+    
+}
 
 
 
