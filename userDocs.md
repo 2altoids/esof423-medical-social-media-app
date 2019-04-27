@@ -33,6 +33,12 @@ After reaching the main page enter your email and password into the email and pa
 
 Once you have logged in you will be taken to the home page.
 
+<h4>Adding a Friend</h4>
+
+To add a friend first click on the friends tab on the main toolbar.   Next enter your friends Email and Display Name into the corresponding fields.
+Finally press the "Add Friend" button to add the friend to your account.  Once the page has re-loaded your friends list will be updated with your new friend.
+
+
 <h3>Reporting a bug</h3>
 
 If you wish to report a bug please first read the following mozilla bug report guidelines [here](https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines)
