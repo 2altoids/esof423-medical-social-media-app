@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 
-<?php  session_start(); ?>
-
-
 <html>
 
 <head>
 	<meta charset="UTF-8">
-	<title>Homepage</title>
+	<title>Messages</title>
 	<link rel="stylesheet" href="../css/user.css" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
@@ -20,33 +17,29 @@
 <body>
 
 <div class="header">
-  <h1>Welcome!</h1>
-  <p>Medical Social Connect</p>
+  <h1>Messages</h1>
 </div>
 
 <div class="navbar">
-  <a href="#">Home</a>
+  <a href="../php/user.php">Home</a>
   <a href="../php/account.php">Account</a>
   <a href="../php/friends.php">Friends</a>
-  <a href="../php/posts.php">Messegas</a>
+  <a href="#">Messages</a>
   <input type="text" placeholder="Search..">
 </div>
 
 <div class="row">
   <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>User Information: </p>
-    <p>Email: <?php echo $_SESSION['logEmail'] ?></p>
-    <p>Name: <?php echo $_SESSION['logName'] ?></p>
+    <h2>New Messages</h2>
+    <h5>Messeges:</h5>
+   <label id = "messegeText" > No new Messeges</label>
     
   </div>
   <div class="main">
-    <h2>Welcome <?php echo $_SESSION['logName'] ?></h2>
-    <h5>This is an area for future posting</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
+    <h2>Posts</h2>
+    <h5>This is an area for future file posting</h5>
     
+    <p>Some text..</p>
    <br>
     
   </div>
@@ -61,3 +54,4 @@
 	
 </body>
 </html>
+

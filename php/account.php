@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php  session_start(); ?>
 
 <html>
 
@@ -24,6 +25,7 @@
 	<a href="../php/user.php">Home</a>
 	<a href="#">Account</a>
 	<a href="../php/friends.php">Friends</a>
+	<a href="../php/posts.php">Messages</a>
 	<input type="text" placeholder="Search..">
 </div>
 
@@ -32,6 +34,7 @@
   <div class="main">
     <h2>Edit User Profile</h2>
     <div class="container">
+        <h3>Edit Account Information</h3>
 		<form action="/action_page.php">
 			<label for="fname">First Name</label>
 			<input type="text" id="fname" name="firstname" placeholder="First Name">
